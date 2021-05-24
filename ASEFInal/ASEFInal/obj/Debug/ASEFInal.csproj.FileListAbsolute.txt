@@ -1,0 +1,10 @@
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\bin\Debug\ASEFInal.exe.config
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\bin\Debug\ASEFInal.exe
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\bin\Debug\ASEFInal.pdb
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.Form1.resources
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.Properties.Resources.resources
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.exe
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.pdb
