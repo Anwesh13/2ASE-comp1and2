@@ -61,6 +61,7 @@ namespace ASEFInal
             this.menuStrip1.Size = new System.Drawing.Size(1111, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -203,7 +204,6 @@ namespace ASEFInal
             // btnExecute
             // 
             this.btnExecute.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnExecute.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExecute.Location = new System.Drawing.Point(886, 409);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(102, 36);

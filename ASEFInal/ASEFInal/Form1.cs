@@ -690,8 +690,8 @@ namespace ASEFInal
                 {
 
                     //drawareapanel.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
-                    pnl_Draw.Image = new Bitmap(pnl_Draw.Width, pnl_Draw.Height);
-                    pnl_Draw.Image.Save(sfdlg.FileName);
+                    pnl_Draw.BackgroundImage = new Bitmap(pnl_Draw.Width, pnl_Draw.Height);
+                    pnl_Draw.BackgroundImage.Save(sfdlg.FileName);
                     bmp.Save(sfdlg.FileName);
                     MessageBox.Show("Saved Successfully.....");
 
@@ -713,6 +713,11 @@ namespace ASEFInal
         }
 
         public int _size1, _size2, _size3, _size4, _size5, _size6, _size7, _size8, _size9, _size10, _size11, _size12;
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
