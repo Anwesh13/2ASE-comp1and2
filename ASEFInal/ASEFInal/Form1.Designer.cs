@@ -90,7 +90,7 @@ namespace ASEFInal
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -125,6 +125,7 @@ namespace ASEFInal
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lbl_StartPosX);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(792, 40);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(285, 100);
@@ -135,36 +136,40 @@ namespace ASEFInal
             // lbl_StartPosY
             // 
             this.lbl_StartPosY.AutoSize = true;
+            this.lbl_StartPosY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_StartPosY.Location = new System.Drawing.Point(162, 48);
             this.lbl_StartPosY.Name = "lbl_StartPosY";
-            this.lbl_StartPosY.Size = new System.Drawing.Size(32, 17);
+            this.lbl_StartPosY.Size = new System.Drawing.Size(43, 24);
             this.lbl_StartPosY.TabIndex = 3;
             this.lbl_StartPosY.Text = "000";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 17);
+            this.label3.Size = new System.Drawing.Size(25, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "X";
             // 
             // lbl_StartPosX
             // 
             this.lbl_StartPosX.AutoSize = true;
+            this.lbl_StartPosX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_StartPosX.Location = new System.Drawing.Point(43, 48);
             this.lbl_StartPosX.Name = "lbl_StartPosX";
-            this.lbl_StartPosX.Size = new System.Drawing.Size(32, 17);
+            this.lbl_StartPosX.Size = new System.Drawing.Size(43, 24);
             this.lbl_StartPosX.TabIndex = 1;
             this.lbl_StartPosX.Text = "000";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(120, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
+            this.label1.Size = new System.Drawing.Size(23, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Y";
             // 
@@ -185,28 +190,33 @@ namespace ASEFInal
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(792, 215);
+            this.btnRun.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRun.Location = new System.Drawing.Point(895, 207);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(75, 23);
+            this.btnRun.Size = new System.Drawing.Size(75, 30);
             this.btnRun.TabIndex = 5;
             this.btnRun.Text = "Run";
-            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.UseVisualStyleBackColor = false;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // btnExecute
             // 
-            this.btnExecute.Location = new System.Drawing.Point(792, 415);
+            this.btnExecute.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnExecute.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExecute.Location = new System.Drawing.Point(886, 409);
             this.btnExecute.Name = "btnExecute";
-            this.btnExecute.Size = new System.Drawing.Size(75, 23);
+            this.btnExecute.Size = new System.Drawing.Size(102, 36);
             this.btnExecute.TabIndex = 6;
             this.btnExecute.Text = "Execute";
-            this.btnExecute.UseVisualStyleBackColor = true;
+            this.btnExecute.UseVisualStyleBackColor = false;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1111, 503);
             this.Controls.Add(this.btnExecute);
             this.Controls.Add(this.btnRun);

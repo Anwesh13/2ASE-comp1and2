@@ -725,7 +725,7 @@ namespace ASEFInal
         }
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Version 2.0.1|| Anwesh Hada || The Executer ");
+            MessageBox.Show("Contat Anwesh Hada For Your Problem");
         }
 
 
