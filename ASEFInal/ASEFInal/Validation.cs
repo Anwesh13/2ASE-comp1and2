@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace ASEFInal
+namespace Paint
 {
     public class Validation
     {

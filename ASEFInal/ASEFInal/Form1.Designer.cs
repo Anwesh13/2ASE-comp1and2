@@ -34,14 +34,18 @@ namespace ASEFInal
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_Draw = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_StartPosX = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lbl_StartPosY = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_StartPosX = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_cmd = new System.Windows.Forms.TextBox();
             this.txt_command = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.btnExecute = new System.Windows.Forms.Button();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,12 +64,18 @@ namespace ASEFInal
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem,
+            this.loadToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.aboutToolStripMenuItem.Text = "About";
@@ -77,6 +87,8 @@ namespace ASEFInal
             this.pnl_Draw.Name = "pnl_Draw";
             this.pnl_Draw.Size = new System.Drawing.Size(384, 398);
             this.pnl_Draw.TabIndex = 1;
+            this.pnl_Draw.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Draw_Paint);
+            this.pnl_Draw.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnl_Draw_MouseClick);
             // 
             // groupBox1
             // 
@@ -91,23 +103,14 @@ namespace ASEFInal
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Co-ordinates";
             // 
-            // label1
+            // lbl_StartPosY
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Y";
-            // 
-            // lbl_StartPosX
-            // 
-            this.lbl_StartPosX.AutoSize = true;
-            this.lbl_StartPosX.Location = new System.Drawing.Point(43, 48);
-            this.lbl_StartPosX.Name = "lbl_StartPosX";
-            this.lbl_StartPosX.Size = new System.Drawing.Size(32, 17);
-            this.lbl_StartPosX.TabIndex = 1;
-            this.lbl_StartPosX.Text = "000";
+            this.lbl_StartPosY.AutoSize = true;
+            this.lbl_StartPosY.Location = new System.Drawing.Point(162, 48);
+            this.lbl_StartPosY.Name = "lbl_StartPosY";
+            this.lbl_StartPosY.Size = new System.Drawing.Size(32, 17);
+            this.lbl_StartPosY.TabIndex = 3;
+            this.lbl_StartPosY.Text = "000";
             // 
             // label3
             // 
@@ -118,14 +121,23 @@ namespace ASEFInal
             this.label3.TabIndex = 2;
             this.label3.Text = "X";
             // 
-            // lbl_StartPosY
+            // lbl_StartPosX
             // 
-            this.lbl_StartPosY.AutoSize = true;
-            this.lbl_StartPosY.Location = new System.Drawing.Point(162, 48);
-            this.lbl_StartPosY.Name = "lbl_StartPosY";
-            this.lbl_StartPosY.Size = new System.Drawing.Size(32, 17);
-            this.lbl_StartPosY.TabIndex = 3;
-            this.lbl_StartPosY.Text = "000";
+            this.lbl_StartPosX.AutoSize = true;
+            this.lbl_StartPosX.Location = new System.Drawing.Point(43, 48);
+            this.lbl_StartPosX.Name = "lbl_StartPosX";
+            this.lbl_StartPosX.Size = new System.Drawing.Size(32, 17);
+            this.lbl_StartPosX.TabIndex = 1;
+            this.lbl_StartPosX.Text = "000";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(120, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Y";
             // 
             // txt_cmd
             // 
@@ -150,6 +162,7 @@ namespace ASEFInal
             this.btnRun.TabIndex = 5;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // btnExecute
             // 
@@ -159,6 +172,34 @@ namespace ASEFInal
             this.btnExecute.TabIndex = 6;
             this.btnExecute.Text = "Execute";
             this.btnExecute.UseVisualStyleBackColor = true;
+            this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // loadToolStripMenuItem
+            // 
+            this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loadToolStripMenuItem.Text = "Load";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -175,6 +216,7 @@ namespace ASEFInal
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -199,6 +241,10 @@ namespace ASEFInal
         private System.Windows.Forms.TextBox txt_command;
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Button btnExecute;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }
 
