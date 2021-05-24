@@ -58,4 +58,5 @@ namespace ASEFInal
             this.xiii2 = list[10];
             this.yiii2 = list[11];
         }
+    }
 }

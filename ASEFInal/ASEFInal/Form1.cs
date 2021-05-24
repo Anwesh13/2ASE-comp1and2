@@ -27,7 +27,6 @@ namespace ASEFInal
         /// variable to create triangle side
         /// </summary>
 
-
         Color btnBorderColor = Color.FromArgb(104, 162, 255);
         Color mainColor = Color.Black;
         int size = 2;
@@ -51,6 +50,8 @@ namespace ASEFInal
 
         string shape;
         ShapeFactory shapeFactory = new ShapeFactory();
+        Shape shapes;
+
 
         private void btnExecute_Click(object sender, EventArgs e)
         {
@@ -390,9 +391,7 @@ namespace ASEFInal
                     }
                     else if (parms.Length == 10)
                     {
-                        DrawPolygon(Int32.Parse(parms[0]), Int32.Parse(parms[1]), Int32.Parse(parms[2]), Int32.Parse(parms[3]),
-                            Int32.Parse(parms[4]), Int32.Parse(parms[5]), Int32.Parse(parms[6]), Int32.Parse(parms[7]),
-                            Int32.Parse(parms[8]), Int32.Parse(parms[9]));
+                        
                     }
 
                 }
@@ -470,10 +469,7 @@ namespace ASEFInal
             }
         }
 
-        private void DrawPolygon(int v1, int v2, int v3, int v4, int v5, int v6, int v7, int v8, int v9, int v10)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         private int GetEndifEndLineNumber()
         {
@@ -628,13 +624,14 @@ namespace ASEFInal
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // txt_cmd.Text = File.ReadAllText(OpenFileDialog.);
-            OpenFileDialog of = new OpenFileDialog();
-            of.Filter = "Text Document(*.txt) | *.txt";
-            if (of.ShowDialog() == DialogResult.OK)
+            OpenFileDialog o = new OpenFileDialog();
+            o.Filter = "PNG Files|*.png|JPEG Files|*.jpeg|Bitmap|*.bmp";
+            if (o.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                txt_cmd.Text = File.ReadAllText(of.FileName);
+                pnl_Draw.BackgroundImage = (Image)Image.FromFile(o.FileName).Clone();
+                pnl_Draw.BackgroundImageLayout = ImageLayout.Zoom;
             }
+            MessageBox.Show("open");
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -655,6 +652,23 @@ namespace ASEFInal
         }
 
         public int _size1, _size2, _size3, _size4, _size5, _size6, _size7, _size8, _size9, _size10, _size11, _size12;
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Version 2.0.1|| Anwesh Hada || The Executer ");
+        }
+
+        public int xi1, yi1, xi2, yi2, xii1, yii1, xii2, yii2, xiii1, yiii1, xiii2, yiii2;
+        Color paintcolor = Color.Blue;
+        Brush bb = new HatchBrush(HatchStyle.Wave, Color.Red, Color.FromArgb(255, 128, 255, 255));
+        int texturestyle = 5;
+
+     
+
 
         private void btnRun_Click(object sender, EventArgs e)
         {
@@ -894,17 +908,7 @@ namespace ASEFInal
 
         }
 
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Version 2.0.1|| Anwesh Hada || The Executer ");
-        }
-
-        public int xi1, yi1, xi2, yi2, xii1, yii1, xii2, yii2, xiii1, yiii1, xiii2, yiii2;
-        Color paintcolor = Color.Blue;
-        Brush bb = new HatchBrush(HatchStyle.Wave, Color.Red, Color.FromArgb(255, 128, 255, 255));
-        int texturestyle = 5;
-
-        Shape shapes;
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
