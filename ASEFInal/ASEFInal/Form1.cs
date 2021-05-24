@@ -24,7 +24,7 @@ namespace ASEFInal
 
         }
         /// <summary>
-        /// variable to create triangle side
+        /// Variable for creating triangle
         /// </summary>
 
         Color btnBorderColor = Color.FromArgb(104, 162, 255);
@@ -113,7 +113,9 @@ namespace ASEFInal
 
             }
         }
-
+        /**
+		 * When button is clicked code is executed
+		 */
         private void RunCommand(String oneLineCommand)
         {
 
@@ -272,6 +274,11 @@ namespace ASEFInal
 
 
         }
+        /// <summary>
+		/// Size of structure is returned
+		/// </summary>
+		/// <param name="lineCommand"></param>
+		/// <returns></returns>
         private int GetSize(string lineCommand)
         {
             int value = 0;
@@ -298,7 +305,9 @@ namespace ASEFInal
             }
             return value;
         }
-
+        /**
+		 *  Initiate shapes and figure to build shapes
+		 */
         private void sendDrawCommand(string lineOfCommand)
         {
             String[] shapes = { "circle", "rectangle", "triangle", "polygon" };
@@ -469,7 +478,10 @@ namespace ASEFInal
             }
         }
 
-        
+        /// <summary>
+        /// initiates loop 
+        /// </summary>
+        /// <returns></returns>
 
         private int GetEndifEndLineNumber()
         {
@@ -513,6 +525,10 @@ namespace ASEFInal
             }
             return lineNum;
         }
+        /// <summary>
+        /// Initiates loops
+        /// </summary>
+        /// <returns></returns>
         private int GetLoopEndLineNumber()
         {
             try
@@ -538,6 +554,11 @@ namespace ASEFInal
             }
         }
 
+        /// <summary>
+        /// initiates if there is if clause
+        /// </summary>
+        /// <returns></returns>
+        /// 
         private int GetLoopStartLineNumber()
         {
             int numberOfLines = txt_command.Lines.Length;
@@ -565,6 +586,9 @@ namespace ASEFInal
 
         }
 
+        /**
+       * Draw Polygon
+       */
         private void DrawPolygon(int v1, int v2, int v3, int v4, int v5, int v6, int v7, int v8)
         {
             Pen myPen = new Pen(mainColor);
@@ -588,6 +612,10 @@ namespace ASEFInal
             g.DrawPolygon(myPen, pnt);
         }
 
+        /**
+		 * Draws a triangle 
+		 */
+
         private void DrawTriangle(int rBase, int adj, int hyp)
         {
             Pen myPen = new Pen(mainColor);
@@ -604,13 +632,18 @@ namespace ASEFInal
             g.DrawPolygon(myPen, pnt);
         }
 
+        /**
+		 * Draws a rectangle 
+		 */
         private void DrawRectangle(int width, int height)
         {
             Pen myPen = new Pen(mainColor);
             g.DrawRectangle(myPen, mouseX - width / 2, mouseY - height / 2, width, height);
         }
 
-
+        /**
+		 * Draws a circle 
+		 */
         private void DrawCircle(int radius)
         {
             Pen myPen = new Pen(mainColor);
@@ -621,6 +654,12 @@ namespace ASEFInal
         {
 
         }
+
+        /// <summary>
+        /// This function will load the text file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -634,16 +673,38 @@ namespace ASEFInal
             MessageBox.Show("open");
         }
 
+        /// <summary>
+        /// to save running program to textfile. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sv = new SaveFileDialog();
-            sv.Filter = "Text Document(*.txt)|*.txt|All Files(*.*)|*.*";
-            if (sv.ShowDialog() == DialogResult.OK)
+            SaveFileDialog sfdlg = new SaveFileDialog();
+            sfdlg.Title = "Save Dialog";
+            sfdlg.Filter = "Bitmap Images (*.jpg)|*.jpg|All files(*.*)|*.*";
+            if (sfdlg.ShowDialog(this) == DialogResult.OK)
             {
-                System.IO.File.WriteAllText(sv.FileName, txt_cmd.Text);
+                using (Bitmap bmp = new Bitmap(pnl_Draw.Width, pnl_Draw.Height))
+                {
+
+                    //drawareapanel.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
+                    pnl_Draw.Image = new Bitmap(pnl_Draw.Width, pnl_Draw.Height);
+                    pnl_Draw.Image.Save(sfdlg.FileName);
+                    bmp.Save(sfdlg.FileName);
+                    MessageBox.Show("Saved Successfully.....");
+
+                }
             }
 
         }
+
+        /// <summary>
+        /// On clicking drawing panel, it displays x and y axis value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void pnl_Draw_MouseClick(object sender, MouseEventArgs e)
         {
@@ -652,6 +713,11 @@ namespace ASEFInal
         }
 
         public int _size1, _size2, _size3, _size4, _size5, _size6, _size7, _size8, _size9, _size10, _size11, _size12;
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -662,14 +728,22 @@ namespace ASEFInal
             MessageBox.Show("Version 2.0.1|| Anwesh Hada || The Executer ");
         }
 
+
+        /// <summary>
+        /// for Triangle sides
+        /// </summary>
         public int xi1, yi1, xi2, yi2, xii1, yii1, xii2, yii2, xiii1, yiii1, xiii2, yiii2;
         Color paintcolor = Color.Blue;
         Brush bb = new HatchBrush(HatchStyle.Wave, Color.Red, Color.FromArgb(255, 128, 255, 255));
         int texturestyle = 5;
 
-     
 
 
+        /// <summary>
+        /// all logic to run command in application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRun_Click(object sender, EventArgs e)
         {
             Regex regexDrRect = new Regex(@"drawto (.*[\d])([,])(.*[\d]) rectangle (.*[\d])([,])(.*[\d])");
