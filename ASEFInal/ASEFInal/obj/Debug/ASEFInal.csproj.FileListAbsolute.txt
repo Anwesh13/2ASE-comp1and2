@@ -8,3 +8,4 @@ C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\bin
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\bin\Debug\ASEFInal.pdb
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.exe
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.pdb
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\ASEFInal\obj\Debug\ASEFInal.csprojAssemblyReference.cache

@@ -1,0 +1,2 @@
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
