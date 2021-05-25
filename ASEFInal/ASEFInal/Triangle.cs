@@ -58,5 +58,10 @@ namespace ASEFInal
             this.xiii2 = list[10];
             this.yiii2 = list[11];
         }
+
+        public override void set(int texturestyle, object bb1, Brush bb, Color c, params int[] list)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ASEFInal</name>
+    </assembly>
+    <members>
+        <member name="F:ASEFInal.Circle.x">
+            <summary>
+            Getting value for ellipse
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Circle.y">
+            <summary>
+            Getting value for ellipse
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Circle.size">
+            <summary>
+            Getting value for ellipse
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Circle.size1">
+            <summary>
+            Getting value for ellipse
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Circle.set(System.Int32,System.Drawing.Brush,System.Drawing.Color,System.Int32[])">
+            <summary>
+            Setting the required parameter for circle
+            </summary>
+            <param name="texturestyle">Define the texture</param>
+            <param name="bb">type of brush</param>
+            <param name="c1">color </param>
+            <param name="list">list of parameter that will be passed inside this function</param>
+        </member>
+        <member name="F:ASEFInal.Form1.btnBorderColor">
+            <summary>
+            Variable for creating triangle
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Form1.RunCommand(System.String)">
+            When button is clicked code is executed
+        </member>
+        <member name="M:ASEFInal.Form1.GetSize(System.String)">
+            <summary>
+            Size of structure is returned
+            </summary>
+            <param name="lineCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ASEFInal.Form1.sendDrawCommand(System.String)">
+            Initiate shapes and figure to build shapes
+        </member>
+        <member name="M:ASEFInal.Form1.GetEndifEndLineNumber">
+            <summary>
+            initiates loop 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ASEFInal.Form1.GetLoopEndLineNumber">
+            <summary>
+            Initiates loops
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ASEFInal.Form1.GetLoopStartLineNumber">
+            <summary>
+            initiates if there is if clause
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:ASEFInal.Form1.DrawPolygon(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            Draw Polygon
+        </member>
+        <member name="M:ASEFInal.Form1.DrawTriangle(System.Int32,System.Int32,System.Int32)">
+            Draws a triangle 
+        </member>
+        <member name="M:ASEFInal.Form1.DrawRectangle(System.Int32,System.Int32)">
+            Draws a rectangle 
+        </member>
+        <member name="M:ASEFInal.Form1.DrawCircle(System.Int32)">
+            Draws a circle 
+        </member>
+        <member name="M:ASEFInal.Form1.loadToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            This function will load the text file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ASEFInal.Form1.saveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            to save running program to textfile. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ASEFInal.Form1.pnl_Draw_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            On clicking drawing panel, it displays x and y axis value
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ASEFInal.Form1.xi1">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.yi1">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.xi2">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.yi2">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.xii1">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.yii1">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.xii2">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.yii2">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.xiii1">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.yiii1">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.xiii2">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Form1.yiii2">
+            <summary>
+            for Triangle sides
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Form1.btnRun_Click(System.Object,System.EventArgs)">
+            <summary>
+            all logic to run command in application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ASEFInal.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ASEFInal.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Rectangle.Draw(System.Drawing.Graphics)">
+            <summary>
+            this function draws rectangle
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:ASEFInal.Rectangle.set(System.Int32,System.Drawing.Brush,System.Drawing.Color,System.Int32[])">
+            <summary>
+            Setting the required properties for rectangle
+            </summary>
+            <param name="texturestyle"></param>
+            <param name="bb"></param>
+            <param name="c1"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:ASEFInal.Shape.Draw(System.Drawing.Graphics)">
+            <summary>
+            Passing Graphic Value
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:ASEFInal.Shape.set(System.Int32,System.Drawing.Brush,System.Drawing.Color,System.Int32[])">
+            <summary>
+            passing the value from button click of form to the shape
+            </summary>
+            <param name="texturestyle">define texture</param>
+            <param name="bb">define properties of brush</param>
+            <param name="c">define color</param>
+            <param name="list">list of parameter</param>
+        </member>
+        <member name="M:ASEFInal.ShapeFactory.GetShape(System.String)">
+            <summary>
+            checking the type of shape
+            </summary>
+            <param name="shapeType"></param>
+            <returns>return shape object </returns>
+        </member>
+        <member name="F:ASEFInal.Triangle.xi1">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.yi1">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.xi2">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.yi2">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.xii1">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.yii1">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.xii2">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.yii2">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.xiii1">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.yiii1">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.xiii2">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="F:ASEFInal.Triangle.yiii2">
+            <summary>
+            Triangle side
+            </summary>
+        </member>
+        <member name="M:ASEFInal.Triangle.set(System.Int32,System.Drawing.Brush,System.Drawing.Color,System.Int32[])">
+            <summary>
+            geting value of coordinates for drawing triangle
+            </summary>
+            <param name="texturestyle"></param>
+            <param name="bb"></param>
+            <param name="c1"></param>
+            <param name="list"></param>
+        </member>
+        <member name="T:ASEFInal.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ASEFInal.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ASEFInal.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:Paint.Validation.checkLoopAndIfValidation">
+            <summary>
+            function to check loop and if validation
+            </summary>
+        </member>
+        <member name="M:Paint.Validation.checkIfVariableDefined(System.String)">
+            <summary>
+            to check if the variable is defined or not
+            </summary>
+            <param name="variable"></param>
+        </member>
+    </members>
+</doc>
