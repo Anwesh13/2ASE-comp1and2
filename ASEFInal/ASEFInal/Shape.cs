@@ -22,7 +22,7 @@ namespace ASEFInal
         /// <param name="bb">define properties of brush</param>
         /// <param name="c">define color</param>
         /// <param name="list">list of parameter</param>
-        public abstract void set(int texturestyle, object bb1, Brush bb, Color c, params int[] list);
+        public abstract void set(int texturestyle, Brush bb, Color c, params int[] list);
 
     }
 }

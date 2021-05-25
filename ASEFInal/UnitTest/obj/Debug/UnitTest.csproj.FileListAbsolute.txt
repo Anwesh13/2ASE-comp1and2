@@ -1,5 +1,3 @@
-C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
-C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -13,6 +11,8 @@ C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin\Debug\ASEFInal.exe.config
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.dll
 C:\Users\Acer\source\repos\ASE-comp1nd2\ase\2ASE-comp1and2\ASEFInal\UnitTest\obj\Debug\UnitTest.pdb

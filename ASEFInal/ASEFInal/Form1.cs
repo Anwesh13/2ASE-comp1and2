@@ -663,7 +663,7 @@ namespace ASEFInal
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // txt_cmd.Text = File.ReadAllText(OpenFileDialog.);
+            //txt_cmd.Text = File.ReadAllText(OpenFileDialog.);
             OpenFileDialog of = new OpenFileDialog();
             of.Filter = "Text Document(*.txt) | *.txt";
             if (of.ShowDialog() == DialogResult.OK)
@@ -681,11 +681,12 @@ namespace ASEFInal
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog sv = new SaveFileDialog();
-            sv.Filter = "Text Document(*.txt)|*.txt|All Files(*.*)|*.*";
+            sv.Filter = "Text Document(.txt)|.txt|All Files(.)|*.*";
             if (sv.ShowDialog() == DialogResult.OK)
             {
                 System.IO.File.WriteAllText(sv.FileName, txt_cmd.Text);
             }
+
         }
 
         /// <summary>
@@ -701,11 +702,6 @@ namespace ASEFInal
         }
 
         public int _size1, _size2, _size3, _size4, _size5, _size6, _size7, _size8, _size9, _size10, _size11, _size12;
-
-        private void showcolorbox_Click(object sender, EventArgs e)
-        {
-          
-        }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -732,7 +728,7 @@ namespace ASEFInal
         /// </summary>
         public int xi1, yi1, xi2, yi2, xii1, yii1, xii2, yii2, xiii1, yiii1, xiii2, yiii2;
         Color paintcolor = Color.Blue;
-        Brush bb = new HatchBrush(HatchStyle.Vertical, Color.Red, Color.FromArgb(255, 128, 255, 255));
+        Brush bb = new HatchBrush(HatchStyle.Wave, Color.Red, Color.FromArgb(255, 128, 255, 255));
         int texturestyle = 5;
 
 

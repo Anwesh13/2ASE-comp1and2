@@ -33,6 +33,18 @@
             <param name="c1">color </param>
             <param name="list">list of parameter that will be passed inside this function</param>
         </member>
+        <member name="T:ASEFInal.FactoryProducerDefination">
+            <summary>
+            Simple Factory definition class
+            </summary>
+        </member>
+        <member name="M:ASEFInal.FactoryProducerDefination.isShape(System.String)">
+            <summary>
+            checks whether the type is shape or color
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
         <member name="F:ASEFInal.Form1.btnBorderColor">
             <summary>
             Variable for creating triangle
@@ -228,6 +240,19 @@
             </summary>
             <param name="shapeType"></param>
             <returns>return shape object </returns>
+        </member>
+        <member name="T:ASEFInal.ShapeFactoryDefination">
+            simple shape factory definition class
+        </member>
+        <member name="M:ASEFInal.ShapeFactoryDefination.isCircle(System.String)">
+            method to check if shape is circle        
+        </member>
+        <member name="M:ASEFInal.ShapeFactoryDefination.isRectangle(System.String)">
+            <summary>
+            method to check if shape is rectangle
+            </summary>
+            <param name="shape"></param>
+            <returns></returns>
         </member>
         <member name="F:ASEFInal.Triangle.xi1">
             <summary>
