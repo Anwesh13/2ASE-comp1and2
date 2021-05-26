@@ -46,6 +46,8 @@ namespace ASEFInal
             this.txt_command = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.btnExecute = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +60,7 @@ namespace ASEFInal
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1111, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1111, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -70,28 +72,28 @@ namespace ASEFInal
             this.loadToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -100,7 +102,7 @@ namespace ASEFInal
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // helpToolStripMenuItem
@@ -112,7 +114,7 @@ namespace ASEFInal
             // 
             // pnl_Draw
             // 
-            this.pnl_Draw.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnl_Draw.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pnl_Draw.Location = new System.Drawing.Point(12, 40);
             this.pnl_Draw.Name = "pnl_Draw";
             this.pnl_Draw.Size = new System.Drawing.Size(741, 419);
@@ -176,14 +178,14 @@ namespace ASEFInal
             // 
             // txt_cmd
             // 
-            this.txt_cmd.Location = new System.Drawing.Point(792, 165);
+            this.txt_cmd.Location = new System.Drawing.Point(792, 187);
             this.txt_cmd.Name = "txt_cmd";
             this.txt_cmd.Size = new System.Drawing.Size(285, 22);
             this.txt_cmd.TabIndex = 3;
             // 
             // txt_command
             // 
-            this.txt_command.Location = new System.Drawing.Point(792, 275);
+            this.txt_command.Location = new System.Drawing.Point(792, 289);
             this.txt_command.Multiline = true;
             this.txt_command.Name = "txt_command";
             this.txt_command.Size = new System.Drawing.Size(285, 128);
@@ -192,8 +194,8 @@ namespace ASEFInal
             // btnRun
             // 
             this.btnRun.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRun.Location = new System.Drawing.Point(895, 207);
+            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRun.Location = new System.Drawing.Point(895, 215);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(75, 30);
             this.btnRun.TabIndex = 5;
@@ -204,7 +206,7 @@ namespace ASEFInal
             // btnExecute
             // 
             this.btnExecute.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnExecute.Location = new System.Drawing.Point(886, 409);
+            this.btnExecute.Location = new System.Drawing.Point(895, 423);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(102, 36);
             this.btnExecute.TabIndex = 6;
@@ -212,12 +214,34 @@ namespace ASEFInal
             this.btnExecute.UseVisualStyleBackColor = false;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(789, 156);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 18);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Single Line Command";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(789, 258);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(163, 18);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Multi-Line Command";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1111, 503);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExecute);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txt_command);
@@ -227,7 +251,7 @@ namespace ASEFInal
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Paint";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -257,6 +281,8 @@ namespace ASEFInal
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
 

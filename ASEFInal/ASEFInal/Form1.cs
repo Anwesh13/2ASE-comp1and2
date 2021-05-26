@@ -728,7 +728,7 @@ namespace ASEFInal
         /// </summary>
         public int xi1, yi1, xi2, yi2, xii1, yii1, xii2, yii2, xiii1, yiii1, xiii2, yiii2;
         Color paintcolor = Color.Blue;
-        Brush bb = new HatchBrush(HatchStyle.Wave, Color.Red, Color.FromArgb(255, 128, 255, 255));
+        Brush bb = new HatchBrush(HatchStyle.Sphere, Color.Green, Color.FromArgb(255, 128, 255, 255));
         int texturestyle = 5;
 
 
