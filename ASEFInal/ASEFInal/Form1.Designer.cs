@@ -79,21 +79,21 @@ namespace ASEFInal
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -220,9 +220,9 @@ namespace ASEFInal
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(789, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 18);
+            this.label2.Size = new System.Drawing.Size(109, 18);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Single Line Command";
+            this.label2.Text = "Component 1";
             // 
             // label4
             // 
@@ -230,9 +230,9 @@ namespace ASEFInal
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(789, 258);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 18);
+            this.label4.Size = new System.Drawing.Size(109, 18);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Multi-Line Command";
+            this.label4.Text = "Component 2";
             // 
             // Form1
             // 
